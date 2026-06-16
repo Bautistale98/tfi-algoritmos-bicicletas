@@ -251,8 +251,20 @@ def devolver_bicicleta():
         print("No existen alquileres.")
         return
 
+    
+    print("\nALQUILERES ACTIVOS:")
+    hay_activos = False
+    for alquiler in alquileres:
+        if "fin" not in alquiler:
+            print(f"ID Bici: {alquiler['bicicleta_id']} - Modelo: {alquiler['modelo']} (Cliente: {alquiler['cliente']})")
+            hay_activos = True
+    
+    if not hay_activos:
+        print("No hay ninguna bicicleta alquilada en este momento.")
+        return
+
     id_bici = pedir_entero(
-        "ID bicicleta a devolver: "
+        "\nID bicicleta a devolver: "
     )
 
     alquiler_activo = None
@@ -266,7 +278,7 @@ def devolver_bicicleta():
             alquiler_activo = alquiler
 
     if alquiler_activo is None:
-        print("No existe alquiler activo.")
+        print("No existe alquiler activo para esa bicicleta.")
         return
 
     fin = datetime.now()
@@ -314,7 +326,8 @@ def mostrar_alquileres():
         print("-" * 40)
 
         print("Cliente:", alquiler["cliente"])
-        print("Bicicleta:", alquiler["modelo"])
+        
+        print(f"Bicicleta: ID {alquiler['bicicleta_id']} - {alquiler['modelo']}")
         print("Inicio:", alquiler["inicio"])
 
         if "fin" in alquiler:
@@ -352,7 +365,8 @@ def estadisticas():
     print("Alquiladas:", alquiladas)
 
     bicicleta_top = None
-    max_usos = -1
+    
+    max_usos = 0
 
     for bici in bicicletas:
 

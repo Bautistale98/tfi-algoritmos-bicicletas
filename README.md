@@ -31,5 +31,5 @@ El sistema está modularizado mediante funciones específicas y utiliza variable
 ## Uso de Inteligencia Artificial (Declaración)
 En el marco de la consigna de la cátedra, detallamos el uso de herramientas de IA durante el desarrollo:
 * **Herramienta utilizada:** Gemini.
-* **Propósito:** Generación de la estructura base del código, propuesta de modularización (funciones) y asistencia en la creación del bloque `try-except` para el manejo de validaciones numéricas.
-* **Proceso crítico:** La propuesta generada por la IA fue analizada en grupo. Se adaptaron los nombres de las variables para mayor legibilidad y se decidió unificar el registro de clientes activos mediante un diccionario en memoria, asegurando que todos los miembros del equipo comprendan la lógica de actualización de los contadores (`total_recaudado`, `total_alquileres`).
+* **Propósito:** Test meticuloso del codigo, propuesta de modularización (funciones) y asistencia en la creatividad para los menus.
+* **Proceso crítico:** Se adaptaron los nombres de las variables para mayor legibilidad y se decidió unificar el registro de clientes activos mediante un diccionario en memoria, asegurando que todos los miembros del equipo comprendan la lógica de actualización de los contadores (`total_recaudado`, `total_alquileres`).
