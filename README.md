@@ -11,6 +11,7 @@
 * Lisandro Jara  - Legajo: 30089
 * Dahiana Cano  - Legajo: 28821
 * Acosta Lourdes - Legajo: 30339
+* Cardozo Lucia Marlen - Legajo: 28819
 
 ## Descripción General del Sistema
 Este proyecto consiste en un sistema de gestión en consola para el alquiler de bicicletas dentro de un parque. Desarrollado íntegramente en Python, el programa permite:
